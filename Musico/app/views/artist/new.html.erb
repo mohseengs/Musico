@@ -1,0 +1,16 @@
+<h1>Artist Sign-up</h1>
+
+<%= form_with model: @artist do |form| %>
+    <%= form.label :name%>
+    <%= form.text_field :name%>
+    <%= form.label :email%>
+    <%= form.text_field :email%>
+    <%= form.label :phone_no%>
+    <%= form.text_field :phone_no%>
+    <%= form.label :password%>
+    <%= form.text_field :password%>
+    <%= form.submit "sign up"%>
+<% end %>
+
+<%= link_to "login", artist_login_path%>
+
